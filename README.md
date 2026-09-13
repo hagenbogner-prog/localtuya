@@ -163,6 +163,14 @@ hard to find a common DP mapping. Below are a table of DP to product mapping
 which are currently seen working. Use it as a guide for your own mapping and
 please contribute to the list if you have the possibility.
 
+## Custom climate mode mappings
+
+If a climate device uses raw Tuya enum values that do not match one of the predefined HVAC or fan mode sets, select `Custom` for the corresponding mode set and enter the device's raw values in the custom fields. Raw values must match the Tuya enum values exactly. Leave a custom field blank when that Home Assistant mode is not supported by the device; blank modes are not exposed by the entity.
+
+For example, a device may use `cool`, `dry`, and `fan` instead of the predefined `cold`, `wet`, and `wind`, or `mid` instead of `middle` for medium fan speed. Existing predefined mode sets remain available and unchanged.
+
+Do not publish local keys, cloud access tokens, or other credentials when sharing a configuration or requesting support.
+
 | DP  | Moes BHT 002                                            | Qlima WMS S + SC52 (AB;AF)                              | Avatto                                     |
 |-----|---------------------------------------------------------|---------------------------------------------------------|--------------------------------------------|
 | 1   | ID: On/Off<br>{true, false}                             | ID: On/Off<br>{true, false}                             | ID: On/Off<br>{true, false}                |
