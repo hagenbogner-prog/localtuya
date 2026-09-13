@@ -93,3 +93,7 @@
 - [ ] No device-specific logic is present.
 - [ ] Tests and validation are accurately reported.
 - [ ] Real-device acceptance passes before opening the upstream PR.
+
+## Progress
+
+- 2026-09-13: GitHub Actions was enabled for the fork. This documentation-only push is used to trigger branch CI; automated validation is pending.
